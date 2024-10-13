@@ -147,6 +147,10 @@ const deleteLastTrim = function () {
 
 deleteLastTrim()
 
+// per questo esercizio ho deciso di creare due distinte funzioni, una che permettesse di aggiungere una nuova
+// auto a fronte dell'inserimento dei rispettivi parametri, ed un'altra funzione che cancelli l'ultimo elemento
+// della proprietà trims come richiesto
+
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
@@ -216,7 +220,7 @@ stampTill32()
 const charactersArray = ['g', 'n', 'u', 'z', 'd']
 const charactersPositions = []
 const definePosition = function () {
-  italianAlphabet = 'abcdefghilmnopqrstuvz'
+  let italianAlphabet = 'abcdefghilmnopqrstuvz'
   for (let i = 0; i < charactersArray.length; i++) {
     charactersPositions[i] = italianAlphabet.indexOf(charactersArray[i]) + 1
   }
@@ -224,3 +228,7 @@ const definePosition = function () {
 }
 
 definePosition()
+
+// per questo esercizio ho creato una stringa con tutte le lettere dell'alfabeto italiano in modo che, grazie
+// al metodo index.of(), fosse possibile capire a che posizione della stringa (e quindi dell'alfabeto) poter
+// trovare le lettere inserite come singoli elementi nell'array
